@@ -1,4 +1,4 @@
-import BannerImg from "../../assets/images/banner_image.png";
+import BannerImg from "../../assets/images/NewBannerImg.png";
 function Hero() {
     return (
         <section className="ak-hero">

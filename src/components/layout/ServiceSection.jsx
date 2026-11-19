@@ -1,3 +1,7 @@
+import BrandIcon from "../../assets/images/brand-collab.png"
+import EmpowerIcon from "../../assets/images/empowerment.png"
+import ContentIcon from "../../assets/images/content-creator.png"
+
 function Services() {
     return (
         <section className="ak-services">
@@ -25,7 +29,7 @@ function Services() {
 
                         <div className="ak-service-icon">
                             <img
-                                src="https://influencer.beplusthemes.com/wp-content/uploads/2023/12/brand-image-2x-min.png"
+                                src={BrandIcon}
                                 alt="Brand collaborations"
                             />
                         </div>
@@ -50,7 +54,7 @@ function Services() {
 
                         <div className="ak-service-icon">
                             <img
-                                src="https://influencer.beplusthemes.com/wp-content/uploads/2023/12/empowerment-2x-min.png"
+                                src={EmpowerIcon}
                                 alt="Empowering creators"
                             />
                         </div>
@@ -75,7 +79,7 @@ function Services() {
 
                         <div className="ak-service-icon">
                             <img
-                                src="https://influencer.beplusthemes.com/wp-content/uploads/2023/12/content-creator-2x-min.png"
+                                src={ContentIcon}
                                 alt="Content planner"
                             />
                         </div>

@@ -1012,7 +1012,7 @@ a:hover {
 
 /* Purple Background Shape */
 
-.ak-hero-shape {
+/* .ak-hero-shape {
   position: absolute;
 
   width: 82%;
@@ -1026,16 +1026,14 @@ a:hover {
   border-radius: 45px 20px 45px 20px;
 
   transform: rotate(-5deg);
-}
+} */
 
 
 /* Creator Image */
 
 .ak-hero-image {
   position: absolute;
-
   inset: 0;
-
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1046,9 +1044,8 @@ a:hover {
 .ak-hero-image img {
   width: 100%;
   height: 100%;
-
-  object-fit: cover;
-  object-position: center bottom;
+  object-fit: contain;
+  object-position: center center;
 }
 
 
@@ -1160,7 +1157,7 @@ a:hover {
 .ak-social-stats-section {
   width: 100%;
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 
@@ -1170,15 +1167,12 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 84px;
-
   background: linear-gradient(90deg,
       var(--color-brand-dark) 0%,
       var(--color-brand-dark) 60%,
       var(--color-primary) 100%);
-
   z-index: 0;
 }
 
@@ -1205,22 +1199,15 @@ a:hover {
 
 .ak-social-stat-card {
   position: relative;
-
   min-height: 282px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   padding: 40px 40px 30px;
-
   background: var(--color-white);
-
   border: 1px solid var(--color-primary-soft);
   border-radius: 16px;
-
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-
   transition: transform 0.3s ease,
     box-shadow 0.3s ease;
 }
@@ -1614,7 +1601,7 @@ a:hover {
   width: 100%;
   position: relative;
   overflow: visible;
-  background-image: linear-gradient(rgb(25 24 35 / 74%), rgb(25 24 35 / 79%)), url(https://influencer.beplusthemes.com/wp-content/uploads/2023/11/bg-footer-min.jpg);
+  background-image: linear-gradient(rgb(25 24 35 / 74%), rgb(25 24 35 / 79%)), url("./assets/images/footer_bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1831,6 +1818,231 @@ a:hover {
 
 
 
+
+/* ==============================
+   BUSINESS SECTION
+================================ */
+
+.business-section {
+    overflow: hidden;
+}
+
+/* Main Container */
+
+.business-container {
+    position: relative;
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    padding-block: 50px;
+}
+
+/* Background Image */
+
+.business-image {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 64%;
+    height: 100%;
+    border-radius: 100px 0 0 100px;
+    overflow: hidden;
+}
+
+.business-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Content Panel */
+
+.business-content {
+    position: relative;
+    z-index: 2;
+    width: 56%;
+    min-height: 500px;
+    /* border-radius: 75px 95px 90px 75px; */
+    padding: 34px 7.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./assets/images/content_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* Section Heading */
+
+.business-content .section-heading {
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.business-content .section-subtitle {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Description */
+
+.business-description {
+    max-width: 440px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* Features */
+
+.business-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+    font-size: 14px;
+}
+
+.business-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-bottom: 12px;
+}
+
+.business-features li span {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Button */
+
+.business-action {
+    display: flex;
+    align-items: center;
+}
+
+/* Watch Video */
+
+.business-video {
+    position: absolute;
+    bottom: 17%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    z-index: 1;
+    color: var(--color-white);
+}
+
+.business-play-button {
+    width: 88px;
+    height: 88px;
+    min-width: 88px;
+    border-radius: 50%;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.business-play-button span {
+    color: var(--color-primary);
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.business-video-text h3 {
+    color: var(--color-white);
+    margin: 0 0 5px;
+    white-space: nowrap;
+}
+
+.business-video-text p {
+    color: var(--color-white);
+    margin: 0;
+    font-size: 12px;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 991px) {
+
+    .business-container {
+        min-height: 550px;
+        flex-direction: column;
+        padding-block:0 ;
+    }
+
+    .business-content {
+        width: 100%;
+        padding: 45px 6%;
+    }
+
+    .business-image {
+        width: 100%;
+        position: relative;
+        right: 0;
+    }
+
+    .business-video {
+        left: 30%;
+    }
+
+    .business-play-button {
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .business-container {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .business-image {
+        position: relative;
+        width: 100%;
+        height: 280px;
+        border-radius: 30px 30px 0 0;
+        right: 0;
+    }
+
+    .business-content {
+        width: 100%;
+        min-height: auto;
+        padding: 35px 25px;
+        border-radius: 0 0 30px 30px;
+        background: var(--color-primary-soft);
+    }
+
+    .business-video {
+        left: 20px;
+        bottom: 25px;
+    }
+
+    .business-play-button {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+    }
+
+    .business-play-button span {
+        font-size: 22px;
+    }
+
+}
 
 
 
@@ -2137,7 +2349,6 @@ a:hover {
 
   .section-heading {
     margin-bottom: 28px;
-    padding: 0 15px;
   }
 
   .section-heading p {

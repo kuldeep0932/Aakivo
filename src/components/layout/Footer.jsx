@@ -1,4 +1,10 @@
 import logo from '../../assets/images/aakivo-logo.png';
+import Instafeed1 from "../../assets/images/instafeed1.jpg"
+import Instafeed2 from "../../assets/images/instafeed2.jpg"
+import Instafeed3 from "../../assets/images/instafeed3.jpg"
+import Instafeed4 from "../../assets/images/instafeed4.jpg"
+import Instafeed5 from "../../assets/images/instafeed5.jpg"
+import Instafeed6 from "../../assets/images/instafeed6.jpg"
 function Footer() {
     return (
         <footer className="ak-footer">
@@ -40,27 +46,27 @@ function Footer() {
                     <div className="ak-footer-gallery">
 
                         <a href="#" className="ak-footer-gallery-item">
-                            <img src="https://influencer.beplusthemes.com/wp-content/uploads/2024/01/ins-5-min.jpg" alt="Creator post 1" />
+                            <img src={Instafeed1} alt="Creator post 1" />
                         </a>
 
                         <a href="#" className="ak-footer-gallery-item">
-                            <img src="https://influencer.beplusthemes.com/wp-content/uploads/2024/01/ins-4-min.jpg" alt="Creator post 2" />
+                            <img src={Instafeed2} alt="Creator post 2" />
                         </a>
 
                         <a href="#" className="ak-footer-gallery-item">
-                            <img src="https://influencer.beplusthemes.com/wp-content/uploads/2024/01/ins-3-min.jpg" alt="Creator post 3" />
+                            <img src={Instafeed3} alt="Creator post 3" />
                         </a>
 
                         <a href="#" className="ak-footer-gallery-item">
-                            <img src="https://influencer.beplusthemes.com/wp-content/uploads/2024/01/ins-2-min.jpg" alt="Creator post 4" />
+                            <img src={Instafeed4} alt="Creator post 4" />
                         </a>
 
                         <a href="#" className="ak-footer-gallery-item">
-                            <img src="https://influencer.beplusthemes.com/wp-content/uploads/2024/01/ins-1-min.jpg" alt="Creator post 5" />
+                            <img src={Instafeed5} alt="Creator post 5" />
                         </a>
 
                         <a href="#" className="ak-footer-gallery-item">
-                            <img src="https://influencer.beplusthemes.com/wp-content/uploads/2024/01/ins-6-min.jpg" alt="Creator post 6" />
+                            <img src={Instafeed6} alt="Creator post 6" />
                         </a>
 
                     </div>
