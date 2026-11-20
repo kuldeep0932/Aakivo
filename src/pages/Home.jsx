@@ -7,6 +7,7 @@ import AboutSection from "../components/layout/AboutSection.jsx";
 import HowItWorks from "../components/layout/HowItWorks.jsx";
 import PodcastSection from "../components/layout/PoadcastSection.jsx";
 import TrustedPartners from "../components/layout/TrustedPartners.jsx";
+import BlogSection from "../components/layout/BlogSection.jsx";
 
 function Home() {
     return (
@@ -22,6 +23,7 @@ function Home() {
                 <AboutSection />
                 <HowItWorks />
                 <TrustedPartners />
+                <BlogSection />
             </main>
         </>
     );
