@@ -1503,97 +1503,6 @@ a:hover {
 
 
 /* ==========================================
-   TABLET RESPONSIVE
-========================================== */
-
-@media (max-width: 991px) {
-
-  .ak-services {
-    padding: 55px 0;
-  }
-
-  .ak-services-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px;
-  }
-
-  .ak-service-card {
-    min-height: 360px;
-    padding: 35px 25px;
-  }
-
-  .ak-services-heading {
-    margin-bottom: 35px;
-  }
-
-}
-
-
-/* ==========================================
-   MOBILE RESPONSIVE
-========================================== */
-
-@media (max-width: 600px) {
-
-  .ak-services {
-    padding: 45px 0;
-  }
-
-  .ak-services-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .ak-service-card {
-    min-height: 340px;
-    padding: 35px 22px;
-  }
-
-  .ak-service-icon {
-    width: 105px;
-    height: 100px;
-    margin-bottom: 20px;
-  }
-
-  .ak-service-icon img {
-    width: 58px;
-    height: 58px;
-  }
-
-  .ak-service-card h3 {
-    font-size: 20px;
-  }
-
-}
-
-
-/* ==========================================
-   SMALL MOBILE
-========================================== */
-
-@media (max-width: 380px) {
-
-  .ak-service-card {
-    padding: 30px 18px;
-  }
-
-  .ak-service-card h3 {
-    font-size: 18px;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================
    AAKIVO FOOTER
 ========================================== */
 
@@ -1824,234 +1733,384 @@ a:hover {
 ================================ */
 
 .business-section {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Main Container */
 
 .business-container {
-    position: relative;
-    min-height: 580px;
-    display: flex;
-    align-items: center;
-    padding-block: 50px;
+  position: relative;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  padding-block: 50px;
 }
 
 /* Background Image */
 
 .business-image {
-    position: absolute;
-    top: 0;
-    right: 15px;
-    width: 64%;
-    height: 100%;
-    border-radius: 100px 0 0 100px;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 64%;
+  height: 100%;
+  border-radius: 100px 0 0 100px;
+  overflow: hidden;
 }
 
 .business-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 /* Content Panel */
 
 .business-content {
-    position: relative;
-    z-index: 2;
-    width: 56%;
-    min-height: 500px;
-    /* border-radius: 75px 95px 90px 75px; */
-    padding: 34px 7.3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url("./assets/images/content_bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+  position: relative;
+  z-index: 2;
+  width: 56%;
+  min-height: 500px;
+  /* border-radius: 75px 95px 90px 75px; */
+  padding: 34px 7.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("./assets/images/content_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 /* Section Heading */
 
 .business-content .section-heading {
-    text-align: left;
-    margin-bottom: 12px;
+  text-align: left;
+  margin-bottom: 12px;
 }
 
 .business-content .section-subtitle {
-    display: inline-block;
-    margin-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 /* Description */
 
 .business-description {
-    max-width: 440px;
-    margin-bottom: 20px;
-    line-height: 1.7;
+  max-width: 440px;
+  margin-bottom: 20px;
+  line-height: 1.7;
 }
 
 /* Features */
 
 .business-features {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 28px;
-    font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  font-size: 14px;
 }
 
 .business-features li {
-    display: flex;
-    align-items: flex-start;
-    gap: 9px;
-    margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: 12px;
 }
 
 .business-features li span {
-    color: var(--color-primary);
-    font-weight: 700;
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 /* Button */
 
 .business-action {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Watch Video */
 
 .business-video {
-    position: absolute;
-    bottom: 17%;
-    left: 35%;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    z-index: 1;
-    color: var(--color-white);
+  position: absolute;
+  bottom: 17%;
+  left: 35%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 1;
+  color: var(--color-white);
 }
 
 .business-play-button {
-    width: 88px;
-    height: 88px;
-    min-width: 88px;
-    border-radius: 50%;
-    background: var(--color-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
-    cursor: pointer;
+  width: 88px;
+  height: 88px;
+  min-width: 88px;
+  border-radius: 50%;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .business-play-button span {
-    color: var(--color-primary);
-    font-size: 30px;
-    margin-left: 5px;
+  color: var(--color-primary);
+  font-size: 30px;
+  margin-left: 5px;
 }
 
 .business-video-text h3 {
-    color: var(--color-white);
-    margin: 0 0 5px;
-    white-space: nowrap;
+  color: var(--color-white);
+  margin: 0 0 5px;
+  white-space: nowrap;
 }
 
 .business-video-text p {
-    color: var(--color-white);
-    margin: 0;
-    font-size: 12px;
+  color: var(--color-white);
+  margin: 0;
+  font-size: 12px;
 }
 
-/* ==============================
+
+
+/* ========================================
+   JOIN AS CREATOR / BRAND SECTION
+======================================== */
+
+.join-section {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.join-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Common Card */
+
+.join-card {
+  position: relative;
+  min-height: 185px;
+  padding: 28px 38px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  isolation: isolate;
+}
+
+/* Creator Card */
+
+.join-creator {
+  background: var(--gradient-brand);
+}
+
+/* Brand Card */
+
+.join-brand {
+  background: var(--color-brand-dark);
+}
+
+/* Content */
+
+.join-content {
+  position: relative;
+  z-index: 3;
+  max-width: 75%;
+
+}
+
+.join-content h3 {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: var(--font-bold);
+  margin-bottom: 8px;
+}
+
+.join-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Buttons - Reusing Global .btn */
+
+.join-content a {
+  background: var(--color-white);
+}
+
+.join-button span {
+  font-size: 17px;
+  line-height: 1;
+}
+
+/* Images */
+
+.join-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.join-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom center;
+}
+
+/* Creator Image */
+
+.creator-image {
+  width: 34%;
+}
+
+.creator-image img {
+  object-position: bottom center;
+}
+
+/* Brand Megaphone */
+
+.brand-image {
+  width: 34%;
+  height: 95%;
+  right: 15px;
+  bottom: 5px;
+}
+
+.brand-image img {
+  object-position: center;
+}
+
+/* Decorative Sparkles */
+
+.join-sparkle {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.65);
+  z-index: 1;
+  font-size: 20px;
+}
+
+.sparkle-one {
+  top: 28px;
+  right: 31%;
+}
+
+.sparkle-two {
+  bottom: 40px;
+  right: 34%;
+}
+
+.sparkle-three {
+  top: 25px;
+  right: 30%;
+  color: #B020FF;
+}
+
+.sparkle-four {
+  bottom: 65px;
+  right: 34%;
+  color: #B020FF;
+}
+
+/* ========================================
    RESPONSIVE DESIGN
-================================ */
+======================================== */
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
 
-    .business-container {
-        min-height: 550px;
-        flex-direction: column;
-        padding-block:0 ;
-    }
+  .join-container {
+    gap: 15px;
+  }
 
-    .business-content {
-        width: 100%;
-        padding: 45px 6%;
-    }
+  .join-card {
+    padding: 25px;
+    min-height: 180px;
+  }
 
-    .business-image {
-        width: 100%;
-        position: relative;
-        right: 0;
-    }
+  .join-content {
+    max-width: 80%;
+  }
 
-    .business-video {
-        left: 30%;
-    }
+  .join-content h3 {
+    font-size: 19px;
+  }
 
-    .business-play-button {
-        width: 65px;
-        height: 65px;
-        min-width: 65px;
-    }
+  .join-content p {
+    font-size: 12px;
+  }
 
-}
-
-@media (max-width: 600px) {
-
-    .business-container {
-        min-height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .business-image {
-        position: relative;
-        width: 100%;
-        height: 280px;
-        border-radius: 30px 30px 0 0;
-        right: 0;
-    }
-
-    .business-content {
-        width: 100%;
-        min-height: auto;
-        padding: 35px 25px;
-        border-radius: 0 0 30px 30px;
-        background: var(--color-primary-soft);
-    }
-
-    .business-video {
-        left: 20px;
-        bottom: 25px;
-    }
-
-    .business-play-button {
-        width: 55px;
-        height: 55px;
-        min-width: 55px;
-    }
-
-    .business-play-button span {
-        font-size: 22px;
-    }
+  .creator-image,
+  .brand-image {
+    width: 32%;
+  }
 
 }
 
+@media (max-width: 768px) {
 
+  .join-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
 
+  .join-card {
+    min-height: 190px;
+    padding: 25px 28px;
+  }
 
+  .join-content {
+    max-width: 70%;
+  }
 
+}
 
+@media (max-width: 480px) {
 
+  .join-card {
+    min-height: 175px;
+    padding: 20px;
+  }
 
+  .join-content {
+    max-width: 75%;
+  }
 
+  .join-content h3 {
+    font-size: 17px;
+  }
+
+  .join-content p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .join-button {
+    padding: 9px 12px;
+    font-size: 10px;
+    gap: 7px;
+  }
+
+  .creator-image,
+  .brand-image {
+    width: 32%;
+  }
+
+}
 
 
 
@@ -2294,7 +2353,50 @@ a:hover {
     min-height: 260px;
   }
 
+  .ak-services {
+    padding: 55px 0;
+  }
 
+  .ak-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .ak-service-card {
+    min-height: 360px;
+    padding: 35px 25px;
+  }
+
+  .ak-services-heading {
+    margin-bottom: 35px;
+  }
+
+  .business-container {
+    min-height: 550px;
+    flex-direction: column;
+    padding-block: 0;
+  }
+
+  .business-content {
+    width: 100%;
+    padding: 45px 6%;
+  }
+
+  .business-image {
+    width: 100%;
+    position: relative;
+    right: 0;
+  }
+
+  .business-video {
+    left: 30%;
+  }
+
+  .business-play-button {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+  }
 }
 
 
@@ -2460,6 +2562,78 @@ a:hover {
     display: none;
   }
 }
+
+@media (max-width: 600px) {
+  .ak-services {
+    padding: 45px 0;
+  }
+
+  .ak-services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ak-service-card {
+    min-height: 340px;
+    padding: 35px 22px;
+  }
+
+  .ak-service-icon {
+    width: 105px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .ak-service-icon img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .ak-service-card h3 {
+    font-size: 20px;
+  }
+
+  .business-container {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .business-image {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 30px 30px 0 0;
+    right: 0;
+  }
+
+  .business-content {
+    width: 100%;
+    min-height: auto;
+    padding: 35px 25px;
+    border-radius: 0 0 30px 30px;
+    background: var(--color-primary-soft);
+  }
+
+  .business-video {
+    left: 20px;
+    bottom: 25px;
+  }
+
+  .business-play-button {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+  }
+
+  .business-play-button span {
+    font-size: 22px;
+  }
+
+}
+
+
 
 @media (max-width: 576px) {
 
@@ -2667,4 +2841,16 @@ a:hover {
   .ak-footer-gallery {
     gap: 8px;
   }
+}
+
+@media (max-width: 380px) {
+
+  .ak-service-card {
+    padding: 30px 18px;
+  }
+
+  .ak-service-card h3 {
+    font-size: 18px;
+  }
+
 }
