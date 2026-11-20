@@ -2027,89 +2027,571 @@ a:hover {
   color: #B020FF;
 }
 
+
 /* ========================================
-   RESPONSIVE DESIGN
+   ABOUT SECTION
 ======================================== */
 
-@media (max-width: 992px) {
-
-  .join-container {
-    gap: 15px;
-  }
-
-  .join-card {
-    padding: 25px;
-    min-height: 180px;
-  }
-
-  .join-content {
-    max-width: 80%;
-  }
-
-  .join-content h3 {
-    font-size: 19px;
-  }
-
-  .join-content p {
-    font-size: 12px;
-  }
-
-  .creator-image,
-  .brand-image {
-    width: 32%;
-  }
-
+.about-section {
+  overflow: hidden;
 }
 
-@media (max-width: 768px) {
-
-  .join-container {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .join-card {
-    min-height: 190px;
-    padding: 25px 28px;
-  }
-
-  .join-content {
-    max-width: 70%;
-  }
-
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
 }
 
-@media (max-width: 480px) {
 
-  .join-card {
-    min-height: 175px;
-    padding: 20px;
-  }
+/* ========================================
+   STATISTICS GRID
+======================================== */
 
-  .join-content {
-    max-width: 75%;
-  }
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
 
-  .join-content h3 {
-    font-size: 17px;
-  }
+.stat-card {
+  position: relative;
+  min-height: 180px;
+  padding: 35px 40px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
 
-  .join-content p {
-    font-size: 11px;
-    line-height: 1.5;
-  }
+/* Individual card backgrounds */
 
-  .join-button {
-    padding: 9px 12px;
-    font-size: 10px;
-    gap: 7px;
-  }
+.stat-purple {
+  background: #F2EEFF;
+}
 
-  .creator-image,
-  .brand-image {
-    width: 32%;
-  }
+.stat-pink {
+  background: #FFF0F6;
+  transform: translateY(60px);
+}
 
+.stat-green {
+  background: #EDFFF0;
+}
+
+.stat-peach {
+  background: #FFF0EF;
+  transform: translateY(60px);
+}
+
+/* Number circle */
+
+.stat-card::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  top: 35px;
+  left: 40px;
+}
+
+/* Statistics number */
+
+.stat-number {
+  position: relative;
+  z-index: 1;
+  font-size: 34px;
+  font-weight: var(--font-bold);
+  color: var(--color-brand-dark);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+
+/* ========================================
+   ABOUT CONTENT
+======================================== */
+
+.about-content {
+  width: 100%;
+}
+
+.about-heading {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.about-heading .section-subtitle {
+  margin-bottom: 12px;
+}
+
+.about-heading h2 {
+  margin-bottom: 20px;
+}
+
+.about-heading h2 span {
+  color: var(--color-primary);
+}
+
+.about-heading p {
+  max-width: 550px;
+  margin: 0;
+}
+
+
+/* ========================================
+   FEATURES
+======================================== */
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+  margin-top: 24px;
+  margin-bottom: 42px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+}
+
+.feature-check {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-weight: var(--font-bold);
+  line-height: 1;
+}
+
+
+
+
+/* ========================================
+   HOW IT WORKS SECTION
+======================================== */
+
+.how-it-works {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-white);
+}
+
+/* Background Pattern */
+
+.how-it-works::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background-image: radial-gradient(var(--color-border) 1px,
+      transparent 1px);
+
+  background-size: 22px 22px;
+  opacity: 0.45;
+}
+
+.how-it-works .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section Heading */
+
+.how-it-works .section-heading {
+  margin-bottom: 55px;
+}
+
+
+.how-it-works .section-heading h2 span {
+  color: var(--color-primary);
+}
+
+/* ========================================
+   TIMELINE
+======================================== */
+
+.works-timeline {
+  position: relative;
+}
+
+/* Center Timeline Line */
+
+.works-timeline::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 50%;
+
+  width: 1px;
+
+  background: linear-gradient(to bottom,
+      var(--color-primary),
+      var(--color-primary-light),
+      var(--color-border));
+
+  transform: translateX(-50%);
+}
+
+/* Timeline Row */
+
+.works-row {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+
+  align-items: center;
+
+  min-height: 235px;
+  margin-bottom: 70px;
+}
+
+.works-row:last-child {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.works-content {
+  padding: 0 25px 0 0;
+}
+
+.works-content h3 {
+  line-height: 1.3;
+  margin-bottom: 12px;
+  color: var(--color-brand-dark);
+}
+
+.works-content h3 span {
+  color: var(--color-primary);
+}
+
+.works-content p {
+  line-height: 1.7;
+  margin-bottom: 18px;
+  max-width: 420px;
+}
+
+/* ========================================
+   STEP NUMBER
+======================================== */
+
+.works-number {
+  position: relative;
+  z-index: 2;
+
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background: var(--color-surface-secondary);
+
+  color: var(--color-brand-dark);
+
+  font-size: 15px;
+  font-weight: var(--font-bold);
+}
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.works-image {
+  width: 100%;
+  max-width: 450px;
+
+  margin-left: auto;
+
+  padding: 5px;
+
+  background: var(--color-white);
+
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-lg);
+
+  overflow: hidden;
+}
+
+.works-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition-normal);
+}
+
+.works-image:hover img {
+  transform: scale(1.04);
+}
+
+/* Second Row Image */
+
+.works-row:nth-child(2) .works-image {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+
+
+/* ========================================
+   PODCAST PLATFORMS SECTION
+======================================== */
+
+.podcast-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-brand);
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* Heading */
+
+.podcast-heading {
+  margin-bottom: 60px;
+}
+
+.podcast-heading .section-subtitle {
+  color: var(--color-white);
+}
+
+.podcast-heading h2 {
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+
+.podcast-heading h2 span {
+  color: var(--color-white);
+}
+
+/* Platform Grid */
+
+.podcast-platforms {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* Platform Card */
+
+.podcast-platform-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  min-height: 105px;
+  padding: 22px 25px;
+
+  background: #F8F3FF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-xl);
+
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+.podcast-platform-card:hover {
+  transform: translateY(-7px);
+  background: var(--color-white);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Platform Icons */
+
+.podcast-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+  color: var(--color-white);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.apple-podcast {
+  background: #C34BEF;
+}
+
+.google-podcast {
+  background: #171322;
+}
+
+.spotify {
+  background: #1DB954;
+}
+
+.soundcloud {
+  background: #FF641E;
+}
+
+/* Platform Information */
+
+.podcast-platform-info p {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.podcast-platform-info h4 {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--color-brand-dark);
+  margin-bottom: 0;
+  letter-spacing: -0.3px;
+}
+
+.podcast-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+}
+
+
+/* ========================================
+   TRUSTED PARTNERS SECTION
+======================================== */
+
+.partners-section {
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.partners-heading {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.partners-heading .section-subtitle {
+  font-size: 16px;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-bottom: 12px;
+}
+
+.partners-heading h2 {
+  max-width: 850px;
+  margin-bottom: 0;
+  font-size: 38px;
+  line-height: 1.35;
+}
+
+.partners-heading h2 span {
+  color: var(--color-primary);
+}
+
+/* ========================================
+   PARTNERS GRID
+======================================== */
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+/* Partner Card */
+
+.partner-card {
+  min-height: 138px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: var(--color-white);
+  border: 1px solid #D8D5DF;
+  border-radius: 16px;
+
+  transition: var(--transition-normal);
+}
+
+.partner-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-primary);
+  transform: translateY(-5px);
+}
+
+.partner-card span {
+  color: #151515;
+  white-space: nowrap;
+}
+
+/* Individual Brand Typography */
+
+.partner-lvmh span {
+  font-family: Georgia, serif;
+  font-size: 43px;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+.partner-everlane span {
+  font-family: Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.partner-kinfo span {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 7px;
+}
+
+.partner-glossier span {
+  font-family: Arial, sans-serif;
+  font-size: 37px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: -2px;
+}
+
+.partner-aesop span {
+  font-family: Georgia, serif;
+  font-size: 39px;
+  font-weight: 400;
+  letter-spacing: -2px;
 }
 
 
@@ -2397,6 +2879,77 @@ a:hover {
     height: 65px;
     min-width: 65px;
   }
+
+
+  .about-container {
+    gap: 35px;
+  }
+
+  .stat-card {
+    min-height: 155px;
+    padding: 25px;
+  }
+
+  .stat-card::before {
+    left: 25px;
+    top: 25px;
+  }
+
+  .stat-number {
+    font-size: 29px;
+  }
+
+  .stat-card p {
+    font-size: 14px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .join-container {
+    gap: 15px;
+  }
+
+  .join-card {
+    padding: 25px;
+    min-height: 180px;
+  }
+
+  .join-content {
+    max-width: 80%;
+  }
+
+  .join-content h3 {
+    font-size: 19px;
+  }
+
+  .join-content p {
+    font-size: 12px;
+  }
+
+  .creator-image,
+  .brand-image {
+    width: 32%;
+  }
+
+  .podcast-platforms {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .podcast-heading {
+    margin-bottom: 45px;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .partners-heading h2 {
+    font-size: 34px;
+  }
 }
 
 
@@ -2561,6 +3114,117 @@ a:hover {
   .ak-hero-visual {
     display: none;
   }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 65px;
+  }
+
+  .about-stats {
+    gap: 20px;
+  }
+
+  .stat-card {
+    min-height: 160px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-heading {
+    text-align: center;
+  }
+
+  .about-heading p {
+    margin: 0 auto;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-action {
+    text-align: center;
+  }
+
+  .join-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .join-card {
+    min-height: 190px;
+    padding: 25px 28px;
+  }
+
+  .join-content {
+    max-width: 70%;
+  }
+
+  .how-it-works {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .how-it-works .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .how-it-works .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .works-timeline::before {
+    left: 25px;
+  }
+
+  .works-row {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+    gap: 15px;
+
+    min-height: auto;
+    margin-bottom: 45px;
+  }
+
+  .works-number {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 48px;
+    height: 48px;
+
+    font-size: 13px;
+  }
+
+  .works-content {
+    grid-column: 2;
+    grid-row: 1;
+
+    padding: 0;
+  }
+
+  .works-image {
+    grid-column: 2;
+    grid-row: 2;
+
+    max-width: 100%;
+    margin: 20px 0 0 !important;
+  }
+
+  .works-image img {
+    height: 180px;
+  }
+
+  .works-content h3 {
+    font-size: 20px;
+  }
+
+  .works-content p {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2689,6 +3353,82 @@ a:hover {
     line-clamp: 1;
     overflow: hidden;
     white-space: nowrap;
+  }
+
+  .podcast-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .podcast-platforms {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .podcast-heading {
+    margin-bottom: 35px;
+  }
+
+  .podcast-platform-card {
+    min-height: 90px;
+    padding: 18px;
+  }
+
+  .podcast-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+
+  .podcast-platform-info h4 {
+    font-size: 17px;
+  }
+
+   .partners-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .partners-heading {
+    margin-bottom: 30px;
+  }
+
+  .partners-heading h2 {
+    font-size: 27px;
+    line-height: 1.3;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .partner-card {
+    min-height: 105px;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .partner-lvmh span {
+    font-size: 32px;
+  }
+
+  .partner-everlane span {
+    font-size: 17px;
+    letter-spacing: 3px;
+  }
+
+  .partner-kinfo span {
+    font-size: 25px;
+    letter-spacing: 4px;
+  }
+
+  .partner-glossier span {
+    font-size: 29px;
+  }
+
+  .partner-aesop span {
+    font-size: 30px;
   }
 
 }
@@ -2841,6 +3581,90 @@ a:hover {
   .ak-footer-gallery {
     gap: 8px;
   }
+
+  .about-container {
+    gap: 50px;
+  }
+
+  .about-stats {
+    gap: 14px;
+  }
+
+  .stat-card {
+    min-height: 135px;
+    padding: 18px;
+  }
+
+  .stat-card::before {
+    width: 58px;
+    height: 58px;
+    top: 20px;
+    left: 18px;
+  }
+
+  .stat-number {
+    font-size: 26px;
+  }
+
+  .stat-card p {
+    font-size: 12px;
+  }
+
+  .stat-pink,
+  .stat-peach {
+    transform: translateY(20px);
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .join-card {
+    min-height: 175px;
+    padding: 20px;
+  }
+
+  .join-content {
+    max-width: 75%;
+  }
+
+  .join-content h3 {
+    font-size: 17px;
+  }
+
+  .join-content p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .join-button {
+    padding: 9px 12px;
+    font-size: 10px;
+    gap: 7px;
+  }
+
+  .creator-image,
+  .brand-image {
+    width: 32%;
+  }
+
+  .how-it-works .section-heading h2 {
+    font-size: 23px;
+  }
+
+  .works-row {
+    gap: 10px;
+    margin-bottom: 35px;
+  }
+
+  .works-content h3 {
+    font-size: 18px;
+  }
+
+  .works-image img {
+    height: 150px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -2852,5 +3676,8 @@ a:hover {
   .ak-service-card h3 {
     font-size: 18px;
   }
-
+  .about-feature{
+    justify-content: center;
+    font-size: 14px;
+  }
 }
