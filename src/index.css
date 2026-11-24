@@ -2742,6 +2742,282 @@ a:hover {
 
 
 /* ========================================
+   BREADCRUMB BANNER
+======================================== */
+
+.breadcrumb-banner {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.breadcrumb-banner-container {
+    width: 100%;
+}
+
+.breadcrumb-banner-content {
+    max-width: 650px;
+}
+
+.breadcrumb-banner-title {
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+
+.breadcrumb-navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.breadcrumb-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.breadcrumb-item a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    opacity: 0.75;
+}
+
+.breadcrumb-home-icon {
+    color: #B020FF;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.breadcrumb-separator {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.breadcrumb-current {
+    color: #ffffff;
+}
+
+
+
+
+/* ========================================
+   INFLUENCER DIRECTORY SECTION
+======================================== */
+
+.influencer-directory-section {
+    background: var(--color-background);
+    overflow: hidden;
+}
+
+.influencer-directory-container {
+    position: relative;
+}
+
+/* ========================================
+   SECTION HEADER
+======================================== */
+
+.influencer-directory-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    margin-bottom: 45px;
+}
+
+.influencer-directory-heading {
+    flex: 1;
+    min-width: 0;
+}
+
+.influencer-directory-heading h2 {
+    margin-top: 8px;
+    color: var(--color-brand-dark);
+    /* font-size: 30px; */
+}
+
+/* ========================================
+   SEARCH FORM
+======================================== */
+
+.influencer-search-form {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    min-height: 50px;
+    /* background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm); */
+}
+
+.influencer-search-input {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 0 24px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-brand-dark);
+    font-size: var(--font-size-base);
+}
+
+.influencer-search-input::placeholder {
+    color: var(--color-text-secondary);
+}
+
+.influencer-search-button {
+    height: 100%;
+    min-width: 180px;
+    border-radius: 0;
+    white-space: nowrap;
+    padding: 15px 25px;
+}
+
+/* ========================================
+   INFLUENCERS GRID
+======================================== */
+
+.influencer-directory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .influencer-directory-header {
+        gap: 25px;
+    }
+
+    .influencer-search-form {
+        width: 55%;
+    }
+
+    .influencer-search-button {
+        min-width: 145px;
+    }
+
+    .influencer-directory-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .influencer-directory-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 22px;
+        margin-bottom: 32px;
+    }
+
+    .influencer-search-form {
+        width: 100%;
+    }
+
+    .influencer-directory-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .influencer-directory-heading h2 {
+        font-size: 24px;
+    }
+
+    .influencer-search-form {
+        min-height: 56px;
+    }
+
+    .influencer-search-input {
+        height: 56px;
+        padding: 0 12px;
+        font-size: 12px;
+    }
+
+    .influencer-search-button {
+        height: 56px;
+        min-width: 105px;
+        padding: 0 10px;
+        font-size: 11px;
+    }
+
+    .influencer-directory-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+}
+
+
+
+
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+    .breadcrumb-banner {
+        min-height: 220px;
+        background-position: center;
+    }
+
+    .breadcrumb-banner-title {
+        font-size: 34px;
+    }
+
+    .breadcrumb-item {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .breadcrumb-banner {
+        min-height: 180px;
+    }
+
+    .breadcrumb-banner-title {
+        font-size: 28px;
+    }
+}
+
+
+/* ========================================
    RESPONSIVE DESIGN
 ======================================== */
 

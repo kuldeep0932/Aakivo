@@ -2,31 +2,32 @@
 function AboutSection() {
     const stats = [
         {
-            number: "25K",
-            label: "Podcasts Episodes",
+            number: "25K+",
+            label: "Creators",
             style: "stat-purple"
         },
         {
             number: "200+",
-            label: "Podcasts Series",
+            label: "Brand Partners",
             style: "stat-pink"
         },
         {
-            number: "19M",
-            label: "Podcasts Listeners",
+            number: "19M+",
+            label: "Audience Reach",
             style: "stat-green"
         },
         {
             number: "10M",
-            label: "Influencer Followers",
+            label: "Social Followers",
             style: "stat-peach"
         }
     ];
 
     const features = [
-        "Exclusive Content",
-        "Social Media Promotions",
-        "Discounts on Merch"
+        "Discover Talented Creators",
+        "Brand Collaborations",
+        "Grow Your Audience",
+        "Manage Campaigns"
     ];
 
     return (
@@ -60,15 +61,11 @@ function AboutSection() {
                         </span>
 
                         <h2>
-                            We connect creators and brands to grow with <span>meaningful</span> collaborations
+                            We Connect Creators and Brands to Build <span>Powerful</span> Collaborations
                         </h2>
 
                         <p>
-                            Aakivo brings influencers and brands
-                            together through meaningful partnerships.
-                            Discover creators, showcase your talent,
-                            and build collaborations that create
-                            real impact.
+                            Aakivo is a platform where creativity meets opportunity. We bring influencers and brands together to create meaningful partnerships, grow audiences, and build impactful marketing campaigns.
                         </p>
                     </div>
 

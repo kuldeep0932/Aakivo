@@ -8,6 +8,7 @@ import HowItWorks from "../components/layout/HowItWorks.jsx";
 import PodcastSection from "../components/layout/PoadcastSection.jsx";
 import TrustedPartners from "../components/layout/TrustedPartners.jsx";
 import BlogSection from "../components/layout/BlogSection.jsx";
+import FeaturedCreators from "../components/layout/FeaturedCreators.jsx";
 
 function Home() {
     return (
@@ -20,6 +21,7 @@ function Home() {
                 <Services />
                 <BusinessSection />
                 <PodcastSection />
+                <FeaturedCreators />
                 <AboutSection />
                 <HowItWorks />
                 <TrustedPartners />

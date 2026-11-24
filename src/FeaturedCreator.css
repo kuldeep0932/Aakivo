@@ -1,0 +1,377 @@
+/* ========================================
+   FEATURED CREATORS SECTION
+======================================== */
+
+.featured-creators-section {
+    background: var(--color-background);
+    overflow: hidden;
+}
+
+.featured-creators-container {
+    position: relative;
+}
+
+
+/* ========================================
+   CREATORS GRID
+======================================== */
+
+.featured-creators-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+
+/* ========================================
+   CREATOR CARD
+======================================== */
+
+.featured-creator-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+    position: relative;
+}
+
+.featured-creator-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+
+/* ========================================
+   CREATOR IMAGE
+======================================== */
+
+.featured-creator-image {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    background: var(--color-primary-soft);
+}
+
+.featured-creator-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+    object-position: 0 0px;
+}
+
+.featured-creator-card:hover .featured-creator-image img {
+    transform: scale(1.06);
+}
+
+
+/* ========================================
+   CREATOR INFORMATION
+======================================== */
+
+.featured-creator-info {
+    padding: 16px 18px 18px;
+}
+
+
+/* ========================================
+   CREATOR NAME
+======================================== */
+
+.featured-creator-name {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 17px;
+    font-weight: var(--font-bold);
+    color: var(--color-brand-dark);
+    margin: 0 0 7px;
+}
+
+
+/* ========================================
+   VERIFIED BADGE
+======================================== */
+
+.featured-creator-verified {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #ffffff;
+    font-size: 9px;
+}
+
+
+/* ========================================
+   CREATOR CATEGORY
+======================================== */
+
+.featured-creator-category {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0 0 7px;
+}
+
+
+/* ========================================
+   CREATOR USERNAME
+======================================== */
+
+.featured-creator-username {
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-semibold);
+    margin-bottom: 13px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+/* ========================================
+   CREATOR BOTTOM SECTION
+======================================== */
+
+.featured-creator-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* ========================================
+   FOLLOWERS BADGE
+======================================== */
+
+.featured-creator-followers {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 7px 12px;
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    font-size: var(--font-size-sm);
+}
+
+.featured-creator-followers i {
+    font-size: 14px;
+}
+
+.featured-creator-followers strong {
+    color: var(--color-brand-dark);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-bold);
+}
+
+
+/* ========================================
+   SOCIAL MEDIA LINKS
+======================================== */
+
+.featured-creator-social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.featured-creator-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-brand-dark);
+    font-size: 18px;
+    text-decoration: none;
+    transition: var(--transition-normal);
+}
+
+.featured-creator-social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* YouTube */
+
+.featured-creator-social-links .fa-youtube {
+    color: #ff0000;
+}
+
+.featured-creator-social-links a:has(.fa-youtube):hover {
+    color: #ff0000;
+}
+
+/* Instagram */
+
+.featured-creator-social-links .fa-instagram {
+    color: #e1306c;
+}
+
+.featured-creator-social-links a:has(.fa-instagram):hover {
+    color: #e1306c;
+}
+
+/* facebook */
+
+.featured-creator-social-links .fa-facebook {
+    color: #0866FF;
+}
+
+.featured-creator-social-links a:has(.fa-facebook):hover {
+    color: var(--color-primary);
+}
+
+
+/* ========================================
+   VIEW PROFILE BUTTON
+======================================== */
+
+.featured-creator-bottom .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 15px;
+    font-size: 12px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.featured-creator-bottom .btn i {
+    font-size: 11px;
+}
+
+
+/* ========================================
+   VIEW ALL BUTTON
+======================================== */
+
+.featured-creators-view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.featured-creator-bottom:has(.featured-creator-social-links) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.featured-creator-bottom>div:first-child {
+    grid-column: span 2;
+    width: fit-content;
+}
+
+.featured-creator-info:not(:has(.featured-creator-social-links)) .featured-creator-bottom {
+    margin-top: 49px;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 992px) {
+
+    .featured-creators-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .featured-creator-image {
+        height: 230px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .featured-creators-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .featured-creator-card {
+        border-radius: var(--radius-lg);
+    }
+
+    .featured-creator-image {
+        height: 150px;
+    }
+
+    .featured-creator-info {
+        padding: 12px;
+    }
+
+    .featured-creator-name {
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .featured-creator-verified {
+        width: 14px;
+        height: 14px;
+        font-size: 8px;
+    }
+
+    .featured-creator-category {
+        font-size: 11px;
+    }
+
+    .featured-creator-username {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .featured-creator-bottom {
+        gap: 10px;
+    }
+
+    .featured-creator-followers {
+        padding: 6px 9px;
+        font-size: 11px;
+        gap: 5px;
+    }
+
+    .featured-creator-followers i {
+        font-size: 12px;
+    }
+
+    .featured-creator-followers strong {
+        font-size: 11px;
+    }
+
+    .featured-creator-social-links {
+        gap: 8px;
+    }
+
+    .featured-creator-social-links a {
+        font-size: 16px;
+    }
+
+    .featured-creator-bottom .btn {
+        width: 100%;
+        padding: 9px 6px;
+        font-size: 11px;
+    }
+
+    .featured-creators-view-all {
+        margin-top: 28px;
+    }
+
+}
