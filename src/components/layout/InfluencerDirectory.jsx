@@ -23,21 +23,15 @@ function InfluencerDirectory() {
 
                     {/* SEARCH BAR */}
                     <form className="influencer-search-form">
-{/* 
-                        <input
-                            type="text"
-                            placeholder="Search by name profession or country"
-                            className="influencer-search-input"
-                        />
-
-                        <button
-                            type="submit"
-                            className="btn btn-primary influencer-search-button"
-                        >
-                            SEARCH NOW
-                        </button> */}
-                        <div class="ak-hero-search"><div class="ak-search-input"><i class="fa-solid fa-magnifying-glass"></i><input placeholder="Search creators, categories or locations..." type="text" /></div><div class="gradient-btn"><a href="/discover">Search Creators<i class="fa-solid fa-arrow-right"></i></a></div></div>
-
+                        <div class="ak-hero-search">
+                            <div class="ak-search-input">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input placeholder="Search creators, categories or locations..." type="text" />
+                            </div>
+                            <div class="gradient-btn">
+                                <a href="/discover">Search Creators<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </form>
 
 

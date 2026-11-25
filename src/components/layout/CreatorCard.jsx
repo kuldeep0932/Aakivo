@@ -1,10 +1,10 @@
+import { Link, NavLink } from "react-router-dom";
 import "../../FeaturedCreator.css"
 import bantaImg from "../../assets/images/banta.jpg"
 import priyaImg from "../../assets/images/priya.jpg"
 import rohanImg from "../../assets/images/rohan.jpg"
 import ananyaImg from "../../assets/images/ananya.png"
 function CreatorCard() {
-
 
     const creators = [
         {
@@ -14,7 +14,7 @@ function CreatorCard() {
             followers: "125K",
             image: bantaImg,
             verified: true,
-            profileUrl: "/creators/aarav-sharma",
+            profileUrl: "/creator-profile",
             socialLinks: {
                 youtube: "https://youtube.com/@aaravcreates",
                 instagram: "https://instagram.com/aaravcreates",
@@ -28,7 +28,7 @@ function CreatorCard() {
             followers: "98K",
             image: priyaImg,
             verified: true,
-            profileUrl: "/creators/priya-mehta",
+            profileUrl: "/creator-profile",
             socialLinks: {
                 youtube: "",
                 instagram: "https://instagram.com/priyamehta",
@@ -42,7 +42,7 @@ function CreatorCard() {
             followers: "210K",
             image: rohanImg,
             verified: true,
-            profileUrl: "/creators/rohan-kapoor",
+            profileUrl: "/creator-profile",
             socialLinks: {
                 youtube: "https://youtube.com/@rohantravels",
                 instagram: "",
@@ -56,7 +56,7 @@ function CreatorCard() {
             followers: "85K",
             image: ananyaImg,
             verified: true,
-            profileUrl: "/creators/ananya-verma",
+            profileUrl: "/creator-profile",
             socialLinks: {
                 youtube: "",
                 instagram: "https://instagram.com/ananyafit",
@@ -155,13 +155,13 @@ function CreatorCard() {
                             </div>
 
                             {/* View Profile */}
-                            <a
-                                href={creator.profileUrl || "/creators"}
+                            <Link
+                                to="/creator-profile"
                                 className="btn btn-outline"
                             >
                                 View Profile
                                 <i className="fas fa-arrow-right"></i>
-                            </a>
+                            </Link>
 
                         </div>
 

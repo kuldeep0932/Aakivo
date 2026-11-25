@@ -6,6 +6,7 @@ import Navbar from './components/layout/Navbar.jsx';
 // pages import
 import Home from './pages/Home.jsx';
 import OurInfluencers from './pages/OurInfluencers.jsx';
+import CreatorProfile from './pages/CreatorProfile.jsx';
 
 
 import Footer from './components/layout/Footer.jsx';
@@ -24,6 +25,10 @@ function App() {
           <Route
             path="/our-influencers"
             element={<OurInfluencers />}
+          />
+          <Route
+            path="/creator-profile"
+            element={<CreatorProfile />}
           />
 
         </Routes>
