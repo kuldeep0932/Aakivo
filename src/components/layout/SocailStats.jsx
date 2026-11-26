@@ -1,7 +1,18 @@
-function SocialStats() {
+function SocialStats({ showHeading = false }) {
     return (
         <section className="ak-social-stats-section">
             <div className="container">
+
+                {/* Optional Section Heading */}
+                {showHeading && (
+                    <div className="section-heading">
+                        <span class="section-subtitle">beauty and lifestyle influencer</span>
+                        <h2>
+                            Follow My Journey On All
+                            <span> Social Media Channels</span>
+                        </h2>
+                    </div>
+                )}
 
                 <div className="ak-social-stats-grid">
 

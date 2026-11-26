@@ -101,8 +101,19 @@ function NavBar() {
                                     Discover
                                 </NavLink>
                             </li>
-                            <li><a href="/pricing">Pricing</a></li>
-                            <li><a href="/about">About</a></li>
+                            <li><NavLink
+                                    to="/pricing"
+                                    className={({ isActive }) =>
+                                        isActive ? "active" : ""
+                                    }
+                                >Pricing</NavLink>
+                            </li>
+                            <li><NavLink
+                                    to="/about"
+                                    className={({ isActive }) =>
+                                        isActive ? "active" : ""
+                                    }
+                                >About</NavLink></li>
                             <li><a href="/contact">Contact</a></li>
 
                         </ul>
